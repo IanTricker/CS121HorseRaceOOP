@@ -18,7 +18,7 @@ void Horse::init(int id, int trackLength){
 void Horse::advance(){
   std::random_device rd;
   std::uniform_int_distribution<int> dist(0,1);
-  int coin = dist(rd);
+  Horse::position=Horse::position+dist(rd);
 } // end advance
 
 void Horse::printLane(){
@@ -30,6 +30,7 @@ void Horse::printLane(){
       std::cout << ".";
     } // end else
   } // end for loop
+  std::cout << std::endl;
 } // end printLane
 
 bool Horse::isWinner(){
