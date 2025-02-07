@@ -44,7 +44,7 @@ bool Horse::isWinner():
     win =  true
   return win
 ```
-##race.cpp
+## race.cpp
 ```
 include iostream
 include horse.h
