@@ -9,7 +9,7 @@ class Race{
   private:
     const int TRACK_LENGTH=15;
     const static int numHorses=5;
-    Horse horse[numHorses];
+    Horse* horse[numHorses];
   public:
     Race();
     void run();

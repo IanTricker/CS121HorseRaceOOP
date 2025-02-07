@@ -3,5 +3,6 @@
 #include "race.h"
 
 int main(){
-  std::cout << "Hello World";
+  Race r;
+  r.run();
 } // end main
